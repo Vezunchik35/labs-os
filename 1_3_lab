@@ -1,1 +1,14 @@
-
+ mkdir suzen
+ cd suzen
+ git init 
+ git add .
+ git commit -m 'initial project'
+ touch script.sh
+ echo '#!/bin/bash' >> script.sh
+ echo 'ls -l' >> script.sh
+ echo 'cat flag' >> script.sh
+ sudo chmod +x script.sh
+ git add script.sh
+ git commit -m 'add script'
+ git remote add origin git@github.com:bykvaadm/OS.git
+ git push -u origin master
